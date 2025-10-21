@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,36 +14,45 @@
             android:id="@+id/etPasswordLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="282dp"
             android:ems="10"
             android:hint="password..."
             android:inputType="textPassword"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="282dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/etUsernameLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="127dp"
             android:ems="10"
             android:hint="USERNAME..."
             android:inputType="textEmailAddress"
-            tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="127dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="86dp"
             android:text="login"
-            tools:layout_editor_absoluteX="150dp"
-            tools:layout_editor_absoluteY="413dp" />
+            app:layout_constraintStart_toStartOf="@+id/etPasswordLogin"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
 
         <TextView
             android:id="@+id/tvSignupLinkLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="67dp"
             android:text="TextView"
-            tools:layout_editor_absoluteX="155dp"
-            tools:layout_editor_absoluteY="528dp" />
+            app:layout_constraintStart_toStartOf="@+id/btnLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
